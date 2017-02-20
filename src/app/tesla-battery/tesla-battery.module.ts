@@ -7,7 +7,7 @@ import { ReactiveFormsModule }          from '@angular/forms';
 import { TeslaBatteryService }          from './tesla-battery.service';
 
 // app
-import { TeslaBatteryComponent }        from './tesla-battery.component';
+import { TeslaBatteryComponent }        from './containers/tesla-battery.component';
 
 @NgModule({
   imports: [
