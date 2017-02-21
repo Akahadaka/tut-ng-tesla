@@ -20,6 +20,10 @@
             [max]="40"
             formControlName="temperature">
           </app-tesla-counter>
+          <app-tesla-climate 
+            [limit]="tesla.get('config.temperature').value > 10" 
+            formControlName="climate">
+          </app-tesla-climate>
         </div>
       </div>
     <div class="tesla-battery__notice">

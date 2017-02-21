@@ -11,6 +11,7 @@ import { TeslaBatteryComponent }        from './containers/tesla-battery/tesla-b
 import { TeslaCarComponent }            from './components/tesla-car/tesla-car.component';
 import { TeslaStatsComponent }          from './components/tesla-stats/tesla-stats.component';
 import { TeslaCounterComponent }        from './components/tesla-counter/tesla-counter.component';
+import { TeslaClimateComponent }        from './components/tesla-climate/tesla-climate.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { TeslaCounterComponent }        from './components/tesla-counter/tesla-c
       TeslaBatteryComponent,
       TeslaCarComponent,
       TeslaStatsComponent,
-      TeslaCounterComponent
+      TeslaCounterComponent,
+      TeslaClimateComponent
   ],
   providers: [
       TeslaBatteryService
