@@ -27,6 +27,8 @@ export class TeslaClimateComponent implements ControlValueAccessor {
     private onTouch: Function;
     private onModelChange: Function;
 
+    constructor() { }
+
     private onChange(value: boolean) {
         this.value = !value;
         this.onModelChange(this.value);
