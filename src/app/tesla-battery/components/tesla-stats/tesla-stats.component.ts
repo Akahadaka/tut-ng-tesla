@@ -1,5 +1,10 @@
+// angular
 import { Component, Input }             from '@angular/core';
 import { ChangeDetectionStrategy }      from '@angular/core';
+
+// app
+import { IStat }                        from "../../models/stat.interface";
+
 
 @Component({
   selector: 'app-tesla-stats',
@@ -9,7 +14,7 @@ import { ChangeDetectionStrategy }      from '@angular/core';
 })
 export class TeslaStatsComponent {
 
-    @Input() stats: Stat[];
+    @Input() stats: IStat[];
 
     constructor() { }
 

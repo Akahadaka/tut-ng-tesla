@@ -8,8 +8,9 @@ import { TeslaBatteryService }          from './tesla-battery.service';
 
 // app
 import { TeslaBatteryComponent }        from './containers/tesla-battery.component';
-import { TeslaCarComponent }            from './components/tesla-car.component';
-import { TeslaStatsComponent } from './components/tesla-stats.component';
+import { TeslaCarComponent }            from './components/tesla-car/tesla-car.component';
+import { TeslaStatsComponent }          from './components/tesla-stats/tesla-stats.component';
+import { TeslaCounterComponent }        from './components/tesla-counter/tesla-counter.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { TeslaStatsComponent } from './components/tesla-stats.component';
   declarations: [
       TeslaBatteryComponent,
       TeslaCarComponent,
-      TeslaStatsComponent
+      TeslaStatsComponent,
+      TeslaCounterComponent
   ],
   providers: [
       TeslaBatteryService
