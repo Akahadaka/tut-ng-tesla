@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+// angular
+import { Component, OnInit }            from '@angular/core';
+import { FormBuilder, FormGroup }       from "@angular/forms";
+
 
 @Component({
   selector: 'app-tesla-battery',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeslaBatteryComponent implements OnInit {
 
-  constructor() { }
+    title: string = "Range per charge";
+    tesla: FormGroup;
 
-  ngOnInit() {
-  }
+    constructor(public fb: FormBuilder) { }
+
+    ngOnInit() {
+        this.tesla = this.fb.group({
+            config: this.fb.group({
+                speed: 55,
+                temperature: 20,
+                climate: true,
+                wheels: 19
+            })
+        });
+    }
 
 }
