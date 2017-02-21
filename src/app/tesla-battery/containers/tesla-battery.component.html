@@ -2,6 +2,26 @@
     <h1>{{ title }}</h1>
     <app-tesla-car [wheelsize]="tesla.get('config.wheels').value"></app-tesla-car>
     <app-tesla-stats [stats]="stats"></app-tesla-stats>
+    <div class="tesla-controls cf" formGroupName="config">
+        <app-tesla-counter
+          [title]="'Speed'"
+          [unit]="'mph'"
+          [step]="5"
+          [min]="45"
+          [max]="70"
+          formControlName="speed">
+        </app-tesla-counter>
+        <div class="tesla-climate cf">
+          <app-tesla-counter
+            [title]="'Outside Temperature'"
+            [unit]="'°'" 
+            [step]="10"
+            [min]="-10"
+            [max]="40"
+            formControlName="temperature">
+          </app-tesla-counter>
+        </div>
+      </div>
     <div class="tesla-battery__notice">
         <p>
             The actual amount of range that you experience will vary based 
