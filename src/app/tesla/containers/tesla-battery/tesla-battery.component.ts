@@ -3,8 +3,8 @@ import { Component, OnInit }            from '@angular/core';
 import { FormBuilder, FormGroup }       from "@angular/forms";
 
 // app
-import { IStat }                        from '../models/stat.interface';
-import { TeslaBatteryService }          from '../tesla-battery.service';
+import { IStat }                        from '../../models/stat.interface';
+import { TeslaBatteryService }          from '../../tesla-battery.service';
 
 
 @Component({
